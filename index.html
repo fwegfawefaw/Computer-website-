@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>PC Builder</h1>
+  </header>
+
+  <main>
+    <section id="parts-selection">
+      <div class="part-selector">
+        <label for="ram-select">RAM:</label>
+        <select id="ram-select" onchange="updateBuildSummary('ram')">
+          <option value="0" data-price="0" data-image="ram-placeholder.jpg" data-description="Select RAM">Select RAM</option>
+          <option value="80" data-price="80" data-image="ram1.jpg" data-description="16GB DDR4 RAM">Corsair Vengeance LPX 16GB - $80</option>
+          <option value="120" data-price="120" data-image="ram2.jpg" data-description="32GB DDR4 RAM">G.Skill Ripjaws V Series 32GB - $120</option>
+          
+        </select>
+      </div>
+
+      <div class="part-selector">
+        <label for="cpu-select">CPU:</label>
+        <select id="cpu-select" onchange="updateBuildSummary('cpu')">
+          <option data-price="0" data-image="cpu-placeholder.jpg" data-description="Select CPU">Select CPU</option>
+          <option data-price="288.98" data-image="cpu2.jpg" data-description="6-Core, 12-Thread Processor">AMD Ryzen 5 7600X -  $288.98</option>
+          <option data-price="488.98" data-image="cpu1.jpg" data-description="8-Core, 16-Thread Processor">AMD Ryzen 7 7800X3D - $488.98</option>
+          <option data-price="491.81" data-image="cpu2.jpg" data-description="16-Core 32-Thread Processor">AMD Ryzen 9 7950X3D -  $491.81</option>
+          <option data-price="348.98" data-image="cpu2.jpg" data-description="14-Core 20-Thread Processor">Intel Core i5-13600K -  $348.98</option>
+          <option data-price="417.98" data-image="cpu2.jpg" data-description="16-Core 24-Thread Processor">Intel Core i7-13700KF -  $417.98</option>
+          <option data-price="637.98" img src="61My4F2-XUL._AC_SX425_.jpg" alt="CPU" data-description="24-Core 32-Thread Processor"><img src="61My4F2-XUL._AC_SX425_.jpg" size alt="CPU">Intel Core i9-13900K -  $637.98</option>
+        </select>
+      </div>
+
+      <div class="part-selector">
+        <label for="gpu-select">GPU:</label>
+        <select id="gpu-select" onchange="updateBuildSummary('gpu')">
+          <option value="0" data-price="0" data-image="gpu-placeholder.jpg" data-description="Select GPU">Select GPU</option>
+          <option value="500" data-price="500" data-image="gpu1.jpg" data-description="NVIDIA GeForce RTX 3070">NVIDIA GeForce RTX 3070 - $500</option>
+          <option value="700" data-price="700" data-image="gpu2.jpg" data-description="AMD Radeon RX 6800 XT">AMD Radeon RX 6800 XT - $700</option>
+          
+        </select>
+      </div>
+
+      <div class="part-selector">
+        <label for="motherboard-select">Motherboard:</label>
+        <select id="motherboard-select" onchange="updateBuildSummary('motherboard')">
+          <option value="0" data-price="0" data-image="mobo-placeholder.jpg" data-description="Select Motherboard">Select Motherboard</option>
+          <option value="150" data-price="150" data-image="mobo1.jpg" data-description="ATX Motherboard">ASUS ROG Strix B550-F - $150</option>
+          <option value="200" data-price="200" data-image="mobo2.jpg" data-description="Micro ATX Motherboard">GIGABYTE B550M DS3H - $200</option>
+          
+        </select>
+      </div>
+
+      <div class="part-selector">
+        <label for="cooling-select">Cooling Fan:</label>
+        <select id="cooling-select" onchange="updateBuildSummary('cooling')">
+          <option value="0" data-price="0" data-image="cooler-placeholder.jpg" data-description="Select Cooling Fan">Select Cooling Fan</option>
+          <option value="50" data-price="50" data-image="cooler1.jpg" data-description="Air Cooler">Cooler Master Hyper 212 RGB - $50</option>
+          <option value="100" data-price="100" data-image="cooler2.jpg" data-description="Liquid Cooler">NZXT Kraken X63 RGB - $100</option>
+          
+        </select>
+      </div>
+
+      <div class="part-selector">
+        <label for="case-select">PC Case:</label>
+        <select id="case-select" onchange="updateBuildSummary('case')">
+          <option value="0" data-price="0" data-image="case-placeholder.jpg" data-description="Select PC Case">Select PC Case</option>
+          <option value="100" data-price="100" data-image="case1.jpg" data-description="Mid Tower Case">NZXT H510 - $100</option>
+          <option value="150" data-price="150" data-image="case2.jpg" data-description="Full Tower Case">Corsair Obsidian 750D - $150</option>
+          
+        </select>
+      </div>
+
+      <div class="part-selector">
+        <label for="psu-select">Power Supply:</label>
+        <select id="psu-select" onchange="updateBuildSummary('psu')">
+          <option value="0" data-price="0" data-image="psu-placeholder.jpg" data-description="Select Power Supply">Select Power Supply</option>
+          <option value="80" data-price="80" data-image="psu1.jpg" data-description="650W PSU">EVGA 650 BQ - $80</option>
+          <option value="120" data-price="120" data-image="psu2.jpg" data-description="750W PSU">Corsair RM750 - $120</option>
+          
+        </select>
+      </div>
+
+      <div class="part-selector">
+        <label for="ssd-select">SSD:</label>
+        <select id="ssd-select" onchange="updateBuildSummary('ssd')">
+          <option value="0" data-price="0" data-image="ssd-placeholder.jpg" data-description="Select SSD">Select SSD</option>
+          <option value="100" data-price="100" data-image="ssd1.jpg" data-description="500GB SSD">Samsung 970 EVO Plus 500GB - $100</option>
+          <option value="150" data-price="150" data-image="ssd2.jpg" data-description="1TB SSD">WD Blue SN550 1TB - $150</option>
+          
+        </select>
+      </div>
+    </section>
+
+    <section id="build-summary">
+      <h2>Build Summary</h2>
+      <ul id="build-list">
+    
+      </ul>
+      <p id="total-cost">Total Cost: $0</p>
+      <button id="checkout-btn" onclick="checkout()">Checkout</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
