@@ -15,17 +15,20 @@
     <section id="parts-selection">
       <div class="part-selector">
         <label for="ram-select">RAM:</label>
-        <select id="ram-select" onchange="updateBuildSummary('ram')">
+        <select id="ram-select" onchange="updateBuildSummary('RAM')">
           <option data-price="0" data-image="ram-placeholder.jpg" data-description="Select RAM">Select RAM</option>
-          <option data-price="80" data-image="ram1.jpg" data-description="16GB DDR4 RAM">Corsair Vengeance LPX 16GB - $80</option>
-          <option data-price="120" data-image="ram2.jpg" data-description="32GB DDR4 RAM">G.Skill Ripjaws V Series 32GB - $120</option>
-          
+          <option data-price="192.99" img src="" alt="RAM" data-description="(2x16GB) 32GB DDR5 6000MHz RAM">G.Skill Trident Z5 Neo RGB - $192.99</option>
+          <option data-price="99.99" img src="" alt="RAM" data-description="(2x8GB) 16GB DDR5 5200MhzRAM">CORSAIR VENGEANCE - $99.99</option>
+          <option data-price="66.99" img src="" alt="RAM" data-description="(2x8GB) 16GB DDR4 4400MhzRAM">Patriot Viper RGB - $66.99</option>
+          <option data-price="222.44" img src="" alt="RAM" data-description="(2x16GB) 32GB DDR5 4800MHz">Samsung - $222.44</option>
+          <option data-price="173.20" img src="" alt="RAM" data-description="(2x16GB) 32GB DDR4 3600MHz">TEAMGROUP T-Force Xtreem ARGB - $173.20</option>
+          <option data-price="143.99" img src="" alt="RAM" data-description="(2x16GB) 32GB DDR5 6000MHz">Crucial Pro - $143.99</option>
         </select>
       </div>
 
       <div class="part-selector">
         <label for="cpu-select">CPU:</label>
-        <select id="cpu-select" onchange="updateBuildSummary('cpu')">
+        <select id="cpu-select" onchange="updateBuildSummary('CPU')">
           <option data-price="0" img src="cpu-placeholder.jpg" data-description="Select CPU">Select CPU</option>
           <option data-price="288.98" img src="" alt="CPU" data-description="6-Core, 12-Thread Processor">AMD Ryzen 5 7600X -  $288.98</option>
           <option data-price="488.98" img src="" alt="CPU" data-description="8-Core, 16-Thread Processor">AMD Ryzen 7 7800X3D - $488.98</option>
@@ -38,7 +41,7 @@
 
       <div class="part-selector">
         <label for="gpu-select">GPU:</label>
-        <select id="gpu-select" onchange="updateBuildSummary('gpu')">
+        <select id="gpu-select" onchange="updateBuildSummary('GPU')">
           <option data-price="0" img src="gpu-placeholder.jpg" data-description="Select GPU">Select GPU</option>
           <option data-price="389.99" img src="" alt="GPU" data-description="3584 NVIDIA CUDA Cores, 12GB GDDR6">NVIDIA GeForce RTX 3060 - $389.99</option>
           <option data-price="588.00" img src="" alt="GPU" data-description="4864 NVIDIA CUDA Cores, 8GB GDDR6">NVIDIA GeForce RTX 3060TI - $588.00</option>
@@ -51,41 +54,53 @@
 
       <div class="part-selector">
         <label for="motherboard-select">Motherboard:</label>
-        <select id="motherboard-select" onchange="updateBuildSummary('motherboard')">
-          <option value="0" data-price="0" data-image="mobo-placeholder.jpg" data-description="Select Motherboard">Select Motherboard</option>
-          <option value="150" data-price="150" data-image="mobo1.jpg" data-description="ATX Motherboard">ASUS ROG Strix B550-F - $150</option>
-          <option value="200" data-price="200" data-image="mobo2.jpg" data-description="Micro ATX Motherboard">GIGABYTE B550M DS3H - $200</option>
-          
+        <select id="motherboard-select" onchange="updateBuildSummary('Motherboard')">
+          <option data-price="0" data-image="mobo-placeholder.jpg" data-description="Select Motherboard">Select Motherboard</option>
+          <option data-price="765.85" data-image="mobo1.jpg" data-description="">Gigabyte B650E Aorus Master AMD B650 Socket AM5 ATX DDR5-SDRAM Motherboard - $765.85</option>
+          <option data-price="618.78" data-image="mobo2.jpg" data-description="">Asrock X670E Taichi AMD X670 Socket AM5 Extended ATX DDR5-SDRAM Motherboard - $618.78</option>
+          <option data-price="389.99" data-image="mobo2.jpg" data-description="">GIGABYTE X670E AORUS PRO X AM5 LGA 1718 AMD X670E ATX Motherboard - $389.99</option>
+          <option data-price="428.98" data-image="mobo2.jpg" data-description="">GIGABYTE Z790I AORUS Ultra Motherboard - $428.98</option>
+          <option data-price="502.45" data-image="mobo2.jpg" data-description="">Asrock Z790 Taichi Lite Intel S1700 Motherboard - $502.45</option>
+          <option data-price="360.76" data-image="mobo2.jpg" data-description="">ASRock Z790M-ITX WiFi Intel Z790 Socket 1700 DDR5 Mini-ITX Motherboard - $360.76</option>
         </select>
       </div>
 
       <div class="part-selector">
         <label for="cooling-select">Cooling Fan:</label>
-        <select id="cooling-select" onchange="updateBuildSummary('cooling')">
-          <option value="0" data-price="0" data-image="cooler-placeholder.jpg" data-description="Select Cooling Fan">Select Cooling Fan</option>
-          <option value="50" data-price="50" data-image="cooler1.jpg" data-description="Air Cooler">Cooler Master Hyper 212 RGB - $50</option>
-          <option value="100" data-price="100" data-image="cooler2.jpg" data-description="Liquid Cooler">NZXT Kraken X63 RGB - $100</option>
-          
+        <select id="cooling-select" onchange="updateBuildSummary('Cooling')">
+          <option data-price="0" data-image="cooler-placeholder.jpg" data-description="Select Cooling Fan">Select Cooling Fan</option>
+          <option data-price="60.55" data-image="cooler1.jpg" data-description="">Noctua NF-A12x15 PWM, Premium Quiet Slim Fan - $60.55</option>
+          <option data-price="17.95" data-image="cooler2.jpg" data-description="">Noctua NF-P12 redux-1700 PWM, High Performance Cooling Fan - $17.95</option>
+          <option data-price="54.35" data-image="cooler2.jpg" data-description="">Scythe Kaze Flex Sealed Precision FBD 120mm Fan - $54.35</option>
+          <option data-price="214.99" data-image="cooler2.jpg" data-description="3 Pack Starter Kit">CORSAIR QX Series QX120 RGB 120mm Fans - $214.99</option>
+          <option data-price="49.99" data-image="cooler2.jpg" data-description="">NZXT F120 RGB Duo - 120mm Dual-Sided RGB Fan - $49.99</option>
+          <option data-price="48.67" data-image="cooler2.jpg" data-description="">Thermaltake Toughfan 12 Pro PC Cooling Fan - $48.67</option>
         </select>
       </div>
 
       <div class="part-selector">
         <label for="case-select">PC Case:</label>
-        <select id="case-select" onchange="updateBuildSummary('case')">
-          <option value="0" data-price="0" data-image="case-placeholder.jpg" data-description="Select PC Case">Select PC Case</option>
-          <option value="100" data-price="100" data-image="case1.jpg" data-description="Mid Tower Case">NZXT H510 - $100</option>
-          <option value="150" data-price="150" data-image="case2.jpg" data-description="Full Tower Case">Corsair Obsidian 750D - $150</option>
-          
+        <select id="case-select" onchange="updateBuildSummary('CASE')">
+          <option data-price="0" data-image="case-placeholder.jpg" data-description="Select PC Case">Select PC Case</option>
+          <option data-price="294.63" data-image="case1.jpg" data-description="Three 140mm Aspect PWM Fans Included">Fractal Design North XL Charcoal Black TG - $294.63</option>
+          <option data-price="104.99" data-image="case2.jpg" data-description="6 PWM ARGB Fans Pre-Installed, Mid Tower Case">MUSETEX ATX PC Case - $104.99</option>
+          <option data-price="149.99" data-image="case2.jpg" data-description="Tempered Glass ATX Mid Tower Computer Case">Lian Li Lancool 216 RGB Black Steel - $149.99</option>
+          <option data-price="149.99" data-image="case2.jpg" data-description="Tempered Glass Mid-Tower ATX PC Case">CORSAIR iCUE 4000X RGB - $149.99</option>
+          <option data-price="306.72" data-image="case2.jpg" data-description="Light Wings 140 mm PWM Fan, ARGB Lighting">Shadow Base 800 FX Black PC Case - $306.72</option>
+          <option data-price="99.99" data-image="case2.jpg" data-description="Mesh & Aluminum Panel - include 2 x 140MM PWM fans & 120mm PWM fan">Lian Li O11 Air Small Case - Mini ITX - $99.99</option>
         </select>
       </div>
 
       <div class="part-selector">
         <label for="psu-select">Power Supply:</label>
         <select id="psu-select" onchange="updateBuildSummary('psu')">
-          <option value="0" data-price="0" data-image="psu-placeholder.jpg" data-description="Select Power Supply">Select Power Supply</option>
-          <option value="80" data-price="80" data-image="psu1.jpg" data-description="650W PSU">EVGA 650 BQ - $80</option>
-          <option value="120" data-price="120" data-image="psu2.jpg" data-description="750W PSU">Corsair RM750 - $120</option>
-          
+          <option data-price="0" data-image="psu-placeholder.jpg" data-description="Select Power Supply">Select Power Supply</option>
+          <option data-price="110.35" data-image="psu1.jpg" data-description="450W PSU">Corsair Semi-Modular ATX CX450M Power Supply - $110.35</option>
+          <option data-price="120" data-image="psu2.jpg" data-description="750W PSU">Corsair CX750F RGB 80 Plus Bronze, Fully Modular RGB Power Supply - $120</option>
+          <option data-price="79.99" data-image="psu2.jpg" data-description="550W PSU">CORSAIR CX550 80 Plus Bronze Non Modular Low-Noise ATX Power Supply - $79.99</option>
+          <option data-price="194.43" data-image="psu2.jpg" data-description="650W PSU">XPG Core Reactor Modular PSU: 80 Plus Gold - ATX - Fully Modular Power Supply - $194.43</option>
+          <option data-price="260.90" data-image="psu2.jpg" data-description="750W PSU">Cooler Master V750 Gold V2 - $260.90</option>
+          <option data-price="297.99" data-image="psu2.jpg" data-description="850W PSU">EVGA Supernova 850 G7 Power Supply - $297.99</option>
         </select>
       </div>
 
@@ -112,7 +127,6 @@
     <section id="build-summary">
       <h2>Build Summary</h2>
       <ul id="build-list">
-    
       </ul>
       <p id="total-cost">Total Cost: $0</p>
       <button id="checkout-btn" onclick="checkout()">Checkout</button>

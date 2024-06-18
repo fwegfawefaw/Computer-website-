@@ -1,4 +1,3 @@
-// Function to update build summary based on selected part type
 function updateBuildSummary(partType) {
   const selectElement = document.getElementById(`${partType}-select`);
   const selectedOption = selectElement.options[selectElement.selectedIndex];
@@ -23,7 +22,6 @@ function updateBuildSummary(partType) {
   }
 }
 
-// Function to remove a part from the build summary
 function removePartFromSummary(partType) {
   const buildList = document.getElementById('build-list');
   const items = buildList.querySelectorAll('li');
@@ -37,7 +35,6 @@ function removePartFromSummary(partType) {
   });
 }
 
-// Function to update the total cost
 function updateTotalCost(priceDifference) {
   const totalCostElem = document.getElementById('total-cost');
   let currentTotal = parseFloat(totalCostElem.textContent.replace('Total Cost: $', ''));
@@ -48,7 +45,7 @@ function updateTotalCost(priceDifference) {
   totalCostElem.textContent = `Total Cost: $${currentTotal.toFixed(2)}`;
 }
 
-// Event listener for changes in part selection
+
 document.addEventListener('DOMContentLoaded', function() {
   const selectElements = document.querySelectorAll('select');
   selectElements.forEach(selectElement => {
@@ -59,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Function to display build summary on checkout
+
 function checkout() {
   const buildSummary = document.getElementById('build-summary').innerHTML;
   alert(`Your Build Summary:\n\n${buildSummary}`);
