@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #b0b0da;
+    background-color: #eed9d9;
     margin: 0;
     padding: 0;
   }
@@ -17,7 +17,7 @@ body {
     justify-content: space-around;
     max-width: 1200px;
     margin: 20px auto;
-    background-color: #d4d1fa;
+    background-color: #e8eef2;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@ body {
   select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #1d1b1b;
+    border: 1px solid #141414;
     border-radius: 4px;
     font-size: 16px;
   }
@@ -53,7 +53,7 @@ body {
   #build-list li {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #272424;
+    border-bottom: 1px solid #161515;
     padding: 10px 0;
   }
   
@@ -68,7 +68,7 @@ body {
   }
   
   #checkout-btn {
-    background-color: #4CAF50;
+    background-color: #9189ee;
     color: white;
     padding: 10px 20px;
     border: none;
