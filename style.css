@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #b0b0da;
     margin: 0;
     padding: 0;
   }
@@ -17,7 +17,7 @@ body {
     justify-content: space-around;
     max-width: 1200px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #d4d1fa;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@ body {
   select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #1d1b1b;
     border-radius: 4px;
     font-size: 16px;
   }
@@ -53,7 +53,7 @@ body {
   #build-list li {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #272424;
     padding: 10px 0;
   }
   
